@@ -96,7 +96,7 @@
         var insert = getNextInsert();
 
         if (!insert) {
-          return cocoon;
+          return null;
         }
 
         cocoon.splice(0, step);
@@ -113,7 +113,7 @@
         var insert = getPrevInsert();
 
         if (!insert) {
-          return cocoon;
+          return null;
         }
 
         cocoon.splice(cocoon.length - step, step);
